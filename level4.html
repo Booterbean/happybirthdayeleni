@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Level 4 — Mayflower Memories</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="level-body level-four">
+  <main id="levelRoot" class="level-root">
+    <div class="level-bg" style="background-image: url('song4/bg.png')"></div>
+    <div class="soft-bubbles" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+
+    <section class="level-hud">
+      <a class="tiny-link" href="index.html">Menu</a>
+      <span class="level-name">Level 4 · Mayflower Memories</span>
+      <span id="liveScore" class="live-score">0</span>
+    </section>
+
+    <img id="photoFrame" class="photo-frame" src="song4/p0.png" alt="Photo memory frame" />
+    <div id="cameraFlash" class="camera-flash"></div>
+
+    <div id="judgement" class="judgement-flash" aria-live="polite"></div>
+    <div id="countdown" class="countdown"></div>
+    <div id="startOverlay" class="start-overlay">
+      <h1>Mayflower Memories</h1>
+      <p>Good timing changes the memory. Bad timing shakes it.</p>
+      <button id="startButton" type="button">Start level</button>
+    </div>
+    <div id="whiteFade" class="white-fade visible"></div>
+    <section id="resultsOverlay" class="results-overlay" aria-live="polite"></section>
+  </main>
+
+  <script src="js/midi.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/level-core.js"></script>
+  <script src="js/level4.js"></script>
+</body>
+</html>

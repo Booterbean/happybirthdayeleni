@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Level 2 — Fluid MeCATnics</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="level-body level-two">
+  <main id="levelRoot" class="level-root">
+    <img id="catFrame" class="full-frame" src="song2/f1.png" alt="Cat exam frame" />
+    <div class="soft-bubbles" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+
+    <section class="level-hud">
+      <a class="tiny-link" href="index.html">Menu</a>
+      <span class="level-name">Level 2 · Fluid MeCATnics</span>
+      <span id="liveScore" class="live-score">0</span>
+    </section>
+
+    <div id="judgement" class="judgement-flash" aria-live="polite"></div>
+    <div id="countdown" class="countdown"></div>
+    <div id="startOverlay" class="start-overlay">
+      <h1>Fluid MeCATnics</h1>
+      <p>Press space on the beat to give kitty ideas.</p>
+      <button id="startButton" type="button">Start level</button>
+    </div>
+    <div id="whiteFade" class="white-fade visible"></div>
+    <section id="resultsOverlay" class="results-overlay" aria-live="polite"></section>
+  </main>
+
+  <script src="js/midi.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/level-core.js"></script>
+  <script src="js/level2.js"></script>
+</body>
+</html>
